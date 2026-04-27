@@ -1,5 +1,7 @@
 title: GreyRing
 description: Frequency-domain black-hole ringdown analyses with greybody factors
+baseurl: "/GreyRing"
+url: "https://romeofelicerosato-prog.github.io"
 
 markdown: kramdown
 kramdown:
