@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="GreyRing home">
+        <img src="{{ '/assets/logo.svg' | relative_url }}" alt="" class="brand-mark">
+        <span>GreyRing</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+      <a href="{{ '/installation/' | relative_url }}">Install</a>
+      <a href="{{ '/theory_files/' | relative_url }}">Theory files</a>
+      <a href="{{ '/kerr_gf_mathematica/' | relative_url }}">Kerr GFs</a>
+      <a href="{{ '/sxs_fit/' | relative_url }}">SXS fit</a>
+      <a href="{{ '/injection_recovery/' | relative_url }}">Injection</a>
+      <a href="{{ '/real_data/' | relative_url }}">Real data</a>
+    </nav>
+    </header>
+
+    <main class="page-shell">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <span>GreyRing documentation</span>
+      <span>Frequency-domain ringdown analyses with greybody factors</span>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greyring"
+version = "0.1.0"
+description = "Frequency-domain GreyRing fits to SXS black-hole ringdown waveforms"
+authors = [
+    { name = "Romeo Felice Rosato" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "sxs",
+    "lalsuite",
+    "bilby",
+    "gwpy",
+    "corner",
+    "h5py",
+    "dynesty",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["greyring*"]

@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3.4"
+gem "jekyll-sass-converter", "~> 2.2"
+gem "webrick", "~> 1.8"
+gem "minima"
+
+# Needed with recent Ruby versions
+gem "csv"
+gem "base64"
+gem "logger"
+gem "bigdecimal"

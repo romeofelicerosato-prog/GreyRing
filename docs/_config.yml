@@ -1,0 +1,23 @@
+title: GreyRing
+description: Frequency-domain black-hole ringdown analyses with greybody factors
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+
+header_pages:
+  - installation.md
+  - theory_files.md
+  - sxs_fit.md
+  - injection_recovery.md
+  - real_data.md
+  - kerr_gf_mathematica.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
