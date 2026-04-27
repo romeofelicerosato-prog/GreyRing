@@ -16,7 +16,7 @@ The current package includes:
 - real-data Bilby example;
 - mathematica notebook for Reflection amplitude computation.
 
-## Installation (To change)
+## Installation
 
 From the root of the repository, run:
 
