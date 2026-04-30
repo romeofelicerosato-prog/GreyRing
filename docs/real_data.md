@@ -46,18 +46,16 @@ To use the GreyRing waveform generator, the package must be imported in the anal
 For example:
 
 ```python
-from greyring.bilby_real_data_model import greyring_22_free_ampl_phase
+from greyring.model import greyring_22_free_ampl_phase
 ```
 
 The example uses a dedicated GreyRing frequency-domain waveform model for real data. In Bilby, the waveform generator is built schematically as:
 
 ```python
 waveform_generator = bilby.gw.WaveformGenerator(
-    duration=duration,
-    sampling_frequency=sampling_frequency,
-    frequency_domain_source_model=greyring_real_data_model,
-    parameter_conversion=identity_conversion,
-    waveform_arguments=waveform_arguments,
+    frequency_domain_source_model=greyring_22_free_ampl_phase,
+    parameter_conversion=identity_map_conversion,
+    waveform_arguments={},
 )
 ```
 

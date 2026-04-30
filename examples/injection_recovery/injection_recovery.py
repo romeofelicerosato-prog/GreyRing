@@ -7,7 +7,7 @@ import numpy as np
 import bilby
 import matplotlib.pyplot as plt
 from bilby.gw.conversion import identity_map_conversion
-from greyring.bilby_injection_model import greyring_22_free_ampl_phase
+from greyring.model import greyring_22_free_ampl_phase
 
 
 #########################      THREADING    ################################

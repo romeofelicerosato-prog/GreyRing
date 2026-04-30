@@ -1,10 +1,11 @@
 # Definition of the GREYRING model
 
 ##########################      IMPORTS    #################################
+
 import os
 import numpy as np
 import lal
-from .bilby_injection_auxiliary import *
+from .auxiliary import *
 
 ######################      CONVERSION CONSTANTS    ########################
 
