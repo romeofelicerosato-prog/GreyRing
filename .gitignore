@@ -119,10 +119,3 @@ temp/
 scratch/
 *.tmp
 *.bak
-
-# -------------------------
-# Large theory/data tables
-# Ignore all .txt files except those needed by examples/sxs_fit
-# -------------------------
-*.txt
-!examples/sxs_fit/**/*.txt

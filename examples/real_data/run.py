@@ -18,7 +18,7 @@ import bilby
 import numpy as np
 from gwpy.timeseries import TimeSeries
 
-from GreyRing.greyring.waveforms import greyring_22_free_ampl_phase
+from greyring.waveforms import greyring_22_free_ampl_phase
 
 #######################      INITIAL SETTINGS     ##########################
 
