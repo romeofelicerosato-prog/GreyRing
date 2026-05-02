@@ -6,8 +6,7 @@ import os
 import numpy as np
 import bilby
 import matplotlib.pyplot as plt
-from bilby.gw.conversion import identity_map_conversion
-from greyring.model import greyring_22_free_ampl_phase
+from greyring.waveforms import greyring_22_free_ampl_phase
 
 
 #########################      THREADING    ################################
@@ -75,7 +74,6 @@ waveform_generator = bilby.gw.WaveformGenerator(
     sampling_frequency=sampling_frequency,
     start_time=start_time,
     frequency_domain_source_model=greyring_22_free_ampl_phase,
-    parameter_conversion=identity_map_conversion,
     waveform_arguments=dict(
         fmin=fmin,
         fmax=fmax,
@@ -88,10 +86,10 @@ waveform_generator = bilby.gw.WaveformGenerator(
 ifos = bilby.gw.detector.InterferometerList(["H1", "L1"])
 
 ifos[0].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
-    asd_file="theory/Sensitivity_curves/aligo_O4high.txt"
+    asd_file="Sensitivity_curves/aLIGO_design_asd.txt"
 )
 ifos[1].power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
-    asd_file="theory/Sensitivity_curves/aligo_O4high.txt"
+    asd_file="Sensitivity_curves/aLIGO_design_asd.txt"
 )
 
 for ifo in ifos:
